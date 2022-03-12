@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+  </head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-areas:
+        "navbar navbar navbar navbar"
+        "section section section section";
+    }
+    nav {
+      grid-area: navbar;
+    }
+    body {
+      height: 100%;
+      background-image: url("images/music-bg10.jpg");
+      background-repeat: no-repeat;
+      background-position: auto;
+      background-size: cover;
+    }
+    .navbar {
+      display: flex;
+      margin: 0 auto;
+      padding: 10px 23px;
+      text-align: center;
+    }
+    .navbar span a {
+      font-size: 2rem;
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      display: block;
+      padding: 5px 30px;
+      border-radius: 30px;
+    }
+    .navbar span a:hover {
+      font-size: 2rem;
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      background-color: rgb(255, 255, 255);
+      display: block;
+      padding: 5px 30px;
+      border-radius: 30px;
+    }
+    .heading {
+      display: block;
+      color: white;
+      font-size: 2rem;
+      text-align: left;
+      padding: 23px 34px;
+      margin: 50px 150px;
+    }
+    p {
+      display: block;
+      color: white;
+      font-size: 2rem;
+      text-align: left;
+      padding: 23px 34px;
+      margin: 50px 150px;
+    }
+  </style>
+  <body>
+    <section class="container">
+      <nav class="navbar">
+        <span class="items"><a href="index.html">Home</a></span>
+        <span class="items"><a href="page2i.html">Instruments</a></span>
+        <span class="items"><a href="page3a.html">About Us</a></span>
+        <span class="items"><a href="page4s.html">Sources</a></span>
+        <span class="items"><a href="page5c.html">Contact Us</a></span>
+      </nav>
+      <div>
+        <h2 class="heading">Sources</h2>
+
+        <p>
+          After detail research about the different types of Musical Instruments
+          through<br />
+          &nbsp1.Internet<br />
+          &nbsp2.Wikipedia<br />
+          &nbsp3.Google<br />
+          &nbsp4.Youtube<br />
+          &nbspAnd many more websites<br />
+          We present you the platorm "Music Melody".
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Melody</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: grid;
+      grid-template-areas:
+        "navbar navbar navbar navbar"
+        "section section section section"
+        "footer footer footer footer";
+    }
+    nav {
+      grid-area: navbar;
+    }
+    section {
+      grid-area: section;
+      text-align: center;
+    }
+
+    footer {
+      grid-area: footer;
+      text-align: center;
+      color: whitesmoke;
+    }
+    span {
+      display: block;
+      text-align: center;
+    }
+    .navbar {
+      display: flex;
+      margin: 0 auto;
+      padding: 10px 23px;
+      text-align: center;
+    }
+    .item {
+      flex-direction: column;
+      font-size: 2rem;
+      margin: 10px 10px;
+      padding: 10px 10px;
+      justify-content: center;
+      text-align: center;
+      grid-template-rows: 50px 50px 50px;
+      position: sticky;
+    }
+    .navbar span a {
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      display: block;
+      padding: 5px 30px;
+      border-radius: 30px;
+    }
+    .navbar span a:hover {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      background-color: rgba(243, 122, 122, 0.39);
+      display: block;
+      padding: 5px 30px;
+      border-radius: 30px;
+    }
+
+    body {
+      height: 100%;
+      background-image: url("images/alexander-rybak-violin-show-light-wallpaper.jpg");
+      background-position: center;
+      background-size: cover;
+    }
+
+    .sec {
+      display: block;
+      text-align: center;
+      position: center;
+    }
+
+    .head {
+      margin: 150px 10px;
+      padding: 10px 10px;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      font-size: 4.5rem;
+    }
+
+    .head:hover {
+      margin: 150px 10px;
+      padding: 10px 10px;
+      color: rgb(102, 16, 16);
+      text-align: center;
+      font-size: 4.5rem;
+      /* background-color: rgba(233, 138, 138, 0.39); */
+      border-radius: 50px;
+    }
+
+    .sec {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn {
+      padding: 6px 20px;
+      border: 2px solid white;
+      border-radius: 10px;
+      background-color: whitesmoke;
+      color: black;
+      font-size: 1.5rem;
+      z-index: -1;
+      margin: 15px;
+      cursor: pointer;
+    }
+
+    #btn:hover {
+      text-decoration: none;
+      color: black;
+      background-color: rgb(211, 108, 108);
+      display: block;
+      padding: 6px 30px;
+      border-radius: 30px;
+
+      font-family: "Cormorant Garamond", serif;
+      font-family: "Zen Antique Soft", serif;
+    }
+  </style>
+  <body>
+    <section class="container">
+      <nav class="navbar">
+        <span class="item"><a href="index.html">Home</a></span>
+        <span class="item"><a href="page2i.html">Instruments</a></span>
+        <span class="item"><a href="page3a.html">About Us</a></span>
+        <span class="item"><a href="page4s.html">Sources</a></span>
+        <span class="item"><a href="page5c.html">Contact Us</a></span>
+      </nav>
+    </section>
+    <section class="sec">
+      <p class="head">
+        Welcome to<span style="color: orange">Music melody</span>
+        Let's explore the music instruments!
+      </p>
+
+      <a href="page5l.html">
+        <button class="btn" id="btn">Login</button>
+      </a>
+    </section>
+
+    <footer>
+      <p class="class">Copyright@musicmelody.in</p>
+    </footer>
+  </body>
+</html>

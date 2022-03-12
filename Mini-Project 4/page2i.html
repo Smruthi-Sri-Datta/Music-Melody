@@ -1,0 +1,1697 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instruments</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: rgba(255, 239, 213, 0.664);
+    }
+    h1 {
+      font-size: 3rem;
+      color: rgb(250, 2, 2);
+      text-align: center;
+    }
+    h2 {
+      font-size: 2rem;
+      color: rgb(250, 2, 2);
+      text-align: center;
+    }
+    h2:hover {
+      font-size: 2rem;
+      color: rgb(10, 10, 10);
+      text-align: center;
+    }
+    body h2 {
+      padding-bottom: 20px;
+    }
+    #content {
+      display: inline-grid;
+      grid-template-areas:
+        "navbar navbar navbar navbar"
+        "section section section section";
+      grid-template-columns: auto auto auto;
+      grid-gap: 4px 4px;
+    }
+
+    section {
+      grid-area: section;
+      text-align: center;
+    }
+    nav {
+      grid-area: navbar;
+    }
+
+    .center {
+      text-align: center;
+      padding: 10px 10px;
+      margin: 10px 10px;
+    }
+
+    .nav {
+      display: flex;
+      margin: 0 auto;
+      padding: 10px 10px;
+      text-align: center;
+    }
+    .navbar {
+      font-size: 1.3rem;
+      display: flex;
+      margin: 0 auto;
+      padding: 23px 34px;
+      text-align: center;
+    }
+    .navbar span a {
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: rgb(3, 3, 3);
+      display: block;
+      padding: 5px 50px;
+      border-radius: 30px;
+    }
+    .navbar span a:hover {
+      font-size: 2rem;
+      text-decoration: none;
+      color: rgb(221, 19, 19);
+      background-color: rgba(243, 122, 122, 0.39);
+      display: block;
+      padding: 5px 50px;
+      border-radius: 20px;
+    }
+
+    .item {
+      /* border: 2px solid red; */
+      padding: 30px;
+      margin: 3px 6px;
+      border-radius: 30px;
+      background-color: rgb(253, 253, 253);
+    }
+    .item img {
+      height: 100px;
+      margin: auto;
+      display: block;
+    }
+    .item:hover {
+      color: rgba(134, 8, 8, 0.733);
+      background-color: rgba(196, 122, 122, 0.247);
+      font-size: 1.2rem;
+      border-radius: 20px;
+      text-decoration: none;
+      font-family: "Cormorant Garamond", serif;
+      font-family: "Zen Antique Soft", serif;
+    }
+    .audio {
+      
+      width: 100%;
+      outline: none;
+      cursor: pointer;
+    }
+    
+  </style>
+  <body>
+    <section class="nav">
+      <nav class="navbar">
+        <span class="items"><a href="index.html">Home</a></span>
+        <span class="items"><a href="page2i.html">Instruments</a></span>
+        <span class="items"><a href="page3a.html">About Us</a></span>
+        <span class="items"><a href="page4s.html">Sources</a></span>
+        <span class="items"><a href="page5c.html">Contact Us</a></span>
+      </nav>
+    </section>
+
+    <h1>Instruments</h1>
+    <br />
+    <h2>Let's listen to some music...</h2>
+    <section class="container">
+      <div id="content">
+        <div class="item">
+          <img src="images/accordion.jpg" alt="" />
+          <h2 class="center">Accordio</h2>
+          <p class="center">
+            An accordion is a musical instrument that has keys similar to a
+            piano, but is small enough for a person to hold. It makes sounds
+            using air pushed and pulled through reeds using a bellows. The
+            accordion can also have buttons instead of keys. The 6-plus-6-system
+            with three rows has the same fingering in all twelve scales. The
+            accordion was first patented in 1829 in Austria by Cyrill Demain.
+          </p>
+
+          <audio controls class="audio">
+            <source src="music/Accordio.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn1" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong1 = document.getElementById("mySong1");
+            var playbtn1 = document.getElementById("playbtn1");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong1.play();
+                playbtn1.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong1.pause();
+                playbtn1.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/bagpipes.jpg" alt="" />
+          <h2 class="center">Bagpipes</h2>
+          <p class="center">
+            The bagpipes are a musical instrument. They are sometimes just
+            called "pipes". They have a bag that holds air. The player keeps the
+            bag full of air by blowing into it with a tube or pumping it with a
+            bellows. To make music, the bag is pressed and the air comes out
+            through a kind of flute or "chanter". There are usually one or more
+            other tubes coming from the bag that make sounds whenever the bag is
+            squeezed, called "drones".
+          </p>
+          <audio controls>
+            <source src="music/Bagpipes.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn2" onclick="play2()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong2 = document.getElementById("mySong2");
+            var playbtn2 = document.getElementById("playbtn2");
+            var count = 0;
+
+            function play2(){
+              if(count == 0){
+                count = 1;
+                mySong2.play2();
+                playbtn2.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong2.pause2();
+                playbtn2.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/bassoon.jpg" alt="" />
+          <h2 class="center">Bassoon</h2>
+          <p class="center">
+            The bassoon is the lowest of the four main instrument of the
+            woodwind family. Like the oboe, it has a double reed. The reed is
+            attached to a curved metal mouthpiece called a "crook" or "bocal"
+            which is joined to the main part of the instrument. This consists of
+            two parts called ‘bass joint’ and ‘wing joint’ (or ‘tenor joint’).
+            These two are joined at the bottom by a U-shaped piece called the
+            ‘boot’. At the top of the instrument is the ‘bell joint’. The
+            instrument is quite heavy.
+          </p>
+          <audio controls>
+            <source src="music/Bassoon.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/indian banjo.jpg" alt="" />
+          <h2 class="center">Banjo</h2>
+          <p class="center">
+            The banjo is a string instrument, that was first played by African
+            slaves in the United States a few hundred years ago. The idea came
+            from other African instruments.[1] The name banjo may have come from
+            a Kimbundu word: mbanza, but it could have also come from a
+            Senegambian word for the bamboo stick used for the banjo's neck.
+          </p>
+          <audio controls>
+            <source src="music/Banjo.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/cello.jpg" alt="" />
+          <h2 class="center">Cello</h2>
+          <p class="center">
+            The cello is an instrument used to play music. Its name comes from
+            the Italian language, so it is pronounced “chello”. The full word is
+            violoncello, but when speaking, people normally call it the “cello”.
+            A person who plays the cello is called a “cellist”. The cello is a
+            very popular instrument. It belongs to the string family. It has
+            many uses: as a solo instrument, in chamber music and also in
+            orchestras. It is also occasionally used by pop musicians.
+          </p>
+          <audio controls>
+            <source src="music/Cello.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/cor anglais.jpg" alt="" />
+          <h2 class="center">Cor anglais</h2>
+          <p class="center">
+            The cor anglais, or English horn, is a double reed instrument in the
+            woodwind family. It is very similar to an oboe, but as it is longer
+            than an oboe it plays lower notes. The lowest note of an oboe is B
+            flat (just below Middle C). The lowest note of a cor anglais is an E
+            natural, a diminished fifth (five notes of a scale, minus a
+            semitone) lower than the oboe's lowest note. The cor anglais is a
+            transposing instrument pitched in F.
+          </p>
+
+          <audio controls>
+            <source src="music/Cor anglais.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/cornet.jpg" alt="" />
+          <h2 class="center">Cornet</h2>
+          <p class="center">
+            A cornet is a brass instrument that is similar to the trumpet. It is
+            part of the higher-brass family, together with trumpets and French
+            horns.
+          </p>
+
+          <audio controls>
+            <source src="music/cornet.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/dhimay.jpg" alt="" />
+          <h2 class="center">Dhimay</h2>
+          <p class="center">
+            The Dhimay, Dhimaya (Nepal Bhasa: धिमय्) or Dhime (धिमे) is a drum.
+            The drummer can hit either side of the drum. The dhime is a
+            traditional Newar musical instrument.[1]
+          </p>
+
+          <audio controls>
+            <source src="music/Dhimay.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/didgeridoo.jpg" alt="" />
+          <h2 class="center">Didgeridoo</h2>
+          <p class="center">
+            The didgeridoo (sometimes didjeridu) is an Australian Aboriginal
+            wind musical instrument. They were used by the Yolgnu people of
+            Arnhem Land. They can be quite long, anywhere from 1 to 3 m (3 to 10
+            ft) long. They are a hollow wooden tube, which can be either
+            cylindrical or conical in shape. It is best described as being a
+            wooden trumpet or drone. Musicologists say it is a brass
+            aerophone.[1]
+          </p>
+
+          <audio controls>
+            <source src="music/Didgeridoo.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/double bass.jpg" alt="" />
+          <h2 class="center">Double bass</h2>
+          <p class="center">
+            The double bass is a big stringed instrument that terms, perhaps
+            more correct, include contrabass and upright bass. It is used in
+            orchestras, jazz bands, rockabilly bands, bluegrass music, and some
+            country music bands. It plays low-pitched musical notes in musical
+            ensembles and bands. In jazz bands, these low-pitched musical notes
+            are called the "bass line." The double bass looks like smaller
+            instruments like the violin, viola, and cello.
+          </p>
+
+          <audio controls>
+            <source src="music/Double bass.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/drum kit.jpg" alt="" />
+          <h2 class="center">Drum Kit</h2>
+          <p class="center">
+            A drum kit (or drum set or trap set) is a collection of drums,
+            cymbals, and other percussion instruments that is used by a drummer
+            in a musical group.The drummer can do other things to the kit, such
+            as attach a tambourine to the spine of the hi-hat, so when he/she
+            puts his/her foot down on the pedal or hits it with a drumstick, the
+            drummer gets the tambourine sound at the same time.
+          </p>
+
+          <audio controls>
+            <source src="music/Drum kit.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/euphonium.jpg" alt="" />
+          <h2 class="center">Euphonium</h2>
+          <p class="center">
+            The euphonium is a brass instrument. It is very similar to the
+            baritone horn, but it is different because the tubes are wider and
+            it is bigger. The euphonium makes low sounds, similar to the
+            trombone. The euphonium has 3 or 4 valves and 1-3 spit valves.
+            "Spit" valves do not really mean there is spit in the instrument, it
+            means that there is condensation in the instrument.
+          </p>
+
+          <audio controls>
+            <source src="music/Euphonium.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/flute.jpg" alt="" />
+          <h2 class="center">Flute</h2>
+          <p class="center">
+            The Flute is a musical instrument.[1] A person who plays the flute
+            is called a flutist. There are many kinds of flutes.[2] The most
+            common concert flute is on C tuning. In addition, there are other
+            flutes like piccolos, alto flutes, and bass flutes.
+          </p>
+          <audio controls>
+            <source src="music/Flute.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/french horn.jpg" alt="" />
+          <h2 class="center">French horn</h2>
+          <p class="center">
+            The horn is a brass instrument. It developed from the horns that
+            some animals have on their heads. Modern horns are often called
+            French horns.Horns were often used during hunting. These early brass
+            instruments were round so that the hunter could put his arm through
+            it and carry it on his shoulder and blow it while riding a horse.
+            The riders could send messages to one another by blowing particular
+            notes.
+          </p>
+          <audio controls>
+            <source src="music/French Horn.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/glackenspiel.jpg" alt="" />
+          <h2 class="center">Glackenspiel</h2>
+          <p class="center">
+            The glockenspiel is a percussion instrument type, in the same
+            musical instruments category as the xylophone and timpani, usually
+            has a range of 2 and a half octaves and is set up in a keyboard
+            instrument format, similar to the xylophone but unlike that wooden
+            instrument, it is a metallophone, is played by hitting it with
+            mallets with a plastic or felt tip, and has a soft sound, but that
+            is very high pitch.It is a percussion pitched idiophone
+          </p>
+          <audio controls>
+            <source src="music/Glockenspiel.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/guitar.jpg" alt="" />
+          <h2 class="center">Guitar</h2>
+          <p class="center">
+            The guitar is a string instrument which is played by plucking the
+            strings. The main parts of a guitar are the body, the fretboard, the
+            headstock and the strings. Guitars are usually made from wood or
+            plastic. . The guitar strings are plucked with the fingers and
+            fingernails of the right hand (or left hand, for left handed
+            players), or a small pick made of thin plastic. Different finger
+            positions on the fretboard make different notes.
+          </p>
+          <audio controls>
+            <source src="music/Guitar.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/harmonica.jpg" alt="" />
+          <h2 class="center">Harmonica</h2>
+          <p class="center">
+            A harmonica is small musical instrument that is played with the
+            mouth by blowing into holes in its side. Harmonicas are cheap and
+            easy to play. Harmonicas produce their musical sounds from the
+            vibrations of reeds in the harmonica's metal case. Harmonicas are
+            used in blues music, folk music, rock and roll music, and pop music.
+            A special type of harmonica, the chromatic harmonica, is used in
+            jazz and classical music
+          </p>
+          <audio controls>
+            <source src="music/Harmonica.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/harmonium.jpg" alt="" />
+          <h2 class="center">Harmonium</h2>
+          <p class="center">
+            A harmonium, also called a "melodeon", "reed organ" or "pump organ",
+            is a keyboard instrument that is a lot like an organ. It makes sound
+            by blowing air through reeds, which are tuned to different pitches
+            to make musical notes.The hand-pumped harmonium was created by
+            Dwarkanath Ghose so that the instrument could be played while the
+            player was sitting down on the floor. It is used in India and in
+            other South Asian countries as an accompanying instrument in
+            Hindustani classical music, Dance and other entertainments.
+          </p>
+
+          <audio controls>
+            <source src="music/Harmonium.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/harp.jpg" alt="" />
+          <h2 class="center">Harp</h2>
+          <p class="center">
+            The harp is a musical instrument. It is the second biggest string
+            instrument in an orchestra. It dates back to 4000 BC when the
+            Egyptians used them in holy places. Christian artists often draw
+            angels playing harps in Heaven.Harps have strings that are tied to
+            the frame, which is usually a triangle made of wood. Each string is
+            tight, and the frame must be strong so that the many tight strings
+            do not break it.
+          </p>
+
+          <audio controls>
+            <source src="music/Harp.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/harpsichords.jpg" alt="" />
+          <h2 class="center">Harpsichords</h2>
+          <p class="center">
+            Harpsichords are keyboard instruments that make sound by having the
+            strings plucked with a plectrum. They are thought to have originated
+            when a keyboard was attached to a psaltery. This makes them
+            different from a clavichord where the strings are hit.In a piano it
+            is possible to play louder or quieter by playing the keys with more
+            or less force. On a harpsichord the volume (playing louder or
+            softer) cannot be controlled by the way it is played.
+          </p>
+
+          <audio controls>
+            <source src="music/Harpsichords.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/melodica.jpg" alt="" />
+          <h2 class="center">Melodica</h2>
+          <p class="center">
+            The melodica, also known as the "blow-organ" or "key-flute", is a
+            wind instrument with a keyboard on top, and is played by blowing air
+            through a mouthpiece that fits into a hole in the side of the
+            instrument. The keyboard is usually two or three octaves long.
+            Melodicas are small, light, and portable. They are popular in music
+            education, especially in Asia.
+          </p>
+
+          <audio controls>
+            <source src="music/Melodica.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/octo bass.jpg" alt="" />
+          <h2 class="center">Octo bass</h2>
+          <p class="center">
+            A octobass is a musical instrument. It is a giant bass with three
+            strings. It is played with a stick like a double bass. It has the
+            deepest sound of any string instrument. There are only seven
+            octobass in the world and they are mostly in museums. The only full
+            working octobass is the one in the Montreal symphony orchestra,
+            making it the only orchestra in the world to have a octobass.
+          </p>
+          <audio controls>
+            <source src="music/Octobass.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/pan flute.webp" alt="" />
+          <h2 class="center">Pan Flute</h2>
+          <p class="center">
+            The pan flute or pan pipe (also known as panflute or panpipes) is an
+            old musical instrument that has five or more pipes of gradually
+            increasing length (and, at times, girth). The pan flute has been a
+            folk instrument, and is considered the first mouth organ, ancestor
+            of both the pipe organ and the harmonica.
+          </p>
+
+          <audio controls>
+            <source src="music/Panflute.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/piano.jpg" alt="" />
+          <h2 class="center">Piano</h2>
+          <p class="center">
+            A piano (also called a pianoforte) is a musical instrument
+            classified as a percussion instrument that is played by pressing
+            keys on a keyboard. A person who plays the piano is called a
+            pianist.
+          </p>
+          <audio controls>
+            <source src="music/Piano.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/piccolo.jpg" alt="" />
+          <h2 class="center">Piccolo</h2>
+          <p class="center">
+            The piccolo is a small flute that plays one octave higher than the
+            normal flute. It sounds an octave higher than written. It is the
+            highest instrument in the orchestra. Sometimes it sounds like a
+            birdcall. The name 'piccolo' comes from the Italian word meaning
+            'small'.
+          </p>
+
+          <audio controls>
+            <source src="music/Piccolo.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/pungi.jpg" alt="" />
+          <h2 class="center">Pungi</h2>
+          <p class="center">
+            The recorder is a musical instrument that is a type of flute. It is
+            shaped like a tube with one end bigger than the other end. A
+            recorder player puts the bigger end in their mouth and blows into
+            it.
+          </p>
+
+          <audio controls>
+            <source src="music/Pungi.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/recorder.jpg" alt="" />
+          <h2 class="center">Recorder</h2>
+          <p class="center">
+            The recorder is a musical instrument that is a type of flute. It is
+            shaped like a tube with one end bigger than the other end. A
+            recorder player puts the bigger end in their mouth and blows into
+            it.In the 1900s more people started to learn the recorder again. One
+            reason was that people wanted to play old music on old kinds of
+            instruments. A second reason was that the recorder is a good
+            instrument for children to learn about music.
+          </p>
+
+          <audio controls>
+            <source src="music/Recorder.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/santur.jpg" alt="" />
+          <h2 class="center">Santur</h2>
+          <p class="center">
+            Santur is an Iranian traditional musical instrument.[1] It can also
+            be referred to as santoor or santour. It is usually based on 18
+            Bridge on the left and right side (9 in left and 9 on the right).
+            Santoor has 4 strings in each bridge. It is commonly played with two
+            wooden stick . The three different parts provide different tones
+            where the yellow strings which is often the first position, while
+            the white strings being in the second position and the bridge, and
+            lastly the yellow strings behind the bridge.
+          </p>
+
+          <audio controls>
+            <source src="music/Santur.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/saxophone.jpg" alt="" />
+          <h2 class="center">Saxophone</h2>
+          <p class="center">
+            A saxophone is a family of musical instruments that are made of
+            brass. These are often just called a "sax". It has seven main keys,
+            including the octave key. Because it is made from brass it is often
+            included in the brass section alongside true brass instruments like
+            the trumpet or trombone. It was developed from the clarinet and
+            shares many similarities to the clarinet. The player blows into a
+            reed fitted into the mouthpiece of the instrument.
+          </p>
+
+          <audio controls>
+            <source src="music/Saxophone.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/shehnai.jpeg" alt="" />
+          <h2 class="center">Shehnai</h2>
+          <p class="center">
+            A Shehnai is a South Asian music instrument which is normally played
+            at marriages and other ceremonies, rites and rituals. The word
+            itself is of Muslim/Turkish origin, combining 'Sheh' (or 'Shah')
+            'Royal' and '-Nai' or 'Ney', a type of Flute. A version of the
+            Shehnai, the Surnai, is also played in the Northern and
+            North-western areas of India and Pakistan, in particular at
+            traditional Polo matches.It is usually made of wood and it has to be
+            blown like a flute to play it.
+          </p>
+
+          <audio controls>
+            <source src="music/Shehnai.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/sitar.jpg" alt="" />
+          <h2 class="center">Sitar</h2>
+          <p class="center">
+            The sitar (English: /ˈsɪtɑːr/ or /sɪˈtɑːr/; Hindi: सितार, Punjabi:
+            ਸਿਤਾਰ, sitāra pronounced [sɪˈtaːr]) is a plucked string instrument.
+            It uses sympathetic strings along with a long hollow neck and a
+            gourd resonating chamber to make a rich sound with complex harmonic
+            resonance. It is used throughout India.
+          </p>
+
+          <audio controls>
+            <source src="music/Sitar.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/tabla.jpg" alt="" />
+          <h2 class="center">Tabla</h2>
+          <p class="center">
+            The tabla invention is found in India. It is also used for
+            classical, popular and devotional music of Pakistan. The instrument
+            is two hand drums of different size and shape, similar to bongos.
+            They make different sounds. The drums are treble and bass drum.
+            Tabla is played hitting the fingers on the drum head and sliding the
+            palm to create a modulating sound. A lot of sounds can be created
+            from the tabla by changing how you use your hands.
+          </p>
+
+          <audio controls>
+            <source src="music/Tabla.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/tambourine.jpg" alt="" />
+          <h2 class="center">Tambourine</h2>
+          <p class="center">
+            The tambourine is a common percussion instrument. The tambourine
+            looks like a small hand-held drum. But in addition to the skin
+            (drumhead) there are also small pairs of jingles - like tiny cymbals
+            - in slots around the frame. However, tambourines come in many
+            types. Some are made without a skin, particularly for use in
+            schools. The tambourine came to Europe through the Arabs who brought
+            it to Italy and Spain.
+          </p>
+
+          <audio controls>
+            <source src="music/Tambourine.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/trombone.webp" alt="" />
+          <h2 class="center">Trombone</h2>
+          <p class="center">
+            The trombone is a brass horn musical instrument. It is similar to a
+            large trumpet, except the player pushes and pulls on its slide to
+            change the length of the tube. Together with vibrations from the
+            player's lips, the trombone can play a wide range of notes. It
+            sounds deeper than a trumpet and is usually said to be one of the
+            bass clef instruments. Music is normally written in the bass clef,
+            but some high parts can be written in tenor clef. Some players have
+            the music transposed into the treble clef. The trombone is the
+            loudest instrument in the symphony orchestra.
+          </p>
+
+          <audio controls>
+            <source src="music/Trombone.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/tuba.jpg" alt="" />
+          <h2 class="center">Tuba</h2>
+          <p class="center">
+            The tuba is the biggest of all the brass musical instruments. They
+            are the newest part of the symphony orchestra, first showing up in
+            the mid-19th century. Most orchestras have a tuba now. Because they
+            are so big, some tubas have a compensating system. This means a
+            fourth, fifth or sixth valve is used to make the instrument sound
+            more in tune . It takes a lot of breath to play the tuba. It is one
+            of the loudest instruments in the orchestra but can also play very
+            quietly.
+          </p>
+
+          <audio controls>
+            <source src="music/Tuba.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/veena.jpg" alt="" />
+          <h2 class="center">Veena</h2>
+          <p class="center">
+            The Veena, also spelled Vina, comprises a family of chordophone
+            instruments from the Indian subcontinent.
+          </p>
+          <audio controls>
+            <source src="music/Veena.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/viola.jpg" alt="" />
+          <h2 class="center">Viola</h2>
+          <p class="center">
+            A viola (/viˈoʊlə/ (About this soundlisten) vee-OH-lə) is a musical
+            instrument which is similar to the violin and cello. The viola
+            sounds lower than a violin, but higher than a cello. It has four
+            strings, called the C, G, D, and A strings. The highest string is
+            the A. The viola is played with a bow in the right hand. Playing
+            with the bow is called arco. Sometimes the strings may be plucked
+            (pizzicato).
+          </p>
+
+          <audio controls>
+            <source src="music/Viola.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/violin.jpg" alt="" />
+          <h2 class="center">Violin</h2>
+          <p class="center">
+            The violin is a string instrument which has four strings and is
+            played with a bow.[1] The strings are usually tuned to the notes G,
+            D, A, and E.[2] It is held between the left collar bone (near the
+            shoulder) and the chin. Different notes are made by fingering
+            (pressing on the strings) with the left hand while bowing with the
+            right. Unlike guitar, it has no frets or other markers on the
+            fingerboard.
+          </p>
+
+          <audio controls>
+            <source src="music/Violin.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/xylophone.jpg" alt="" />
+          <h2 class="center">Xylophone</h2>
+          <p class="center">
+            A xylophone is a musical instrument that is part of the percussion
+            family. It belongs to the group which is often called "pitched
+            percussion" or tuned percussion because it can play different
+            pitches and is a different way of expressing the sound that it
+            creats. (notes). Xylophones have bars which are made of wood. People
+            play the xylophone by hitting the bars with a mallet (a kind of drum
+            stick). Each piece of wood is a different length, so they play
+            different notes when they are hit.
+          </p>
+
+          <audio controls>
+            <source src="music/Xylophone.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+
+        <div class="item">
+          <img src="images/zither.jpg" alt="" />
+          <h2 class="center">zither</h2>
+          <p class="center">
+            A zither is a stringed musical instrument. The word 'Zither' is a
+            German rendering of the Greek word cithara, from which the modern
+            word "guitar" also derives. Historically, it has been applied to any
+            instrument of the cittern family, or an instrument consisting of
+            many strings stretched across a thin, flat body – similar to a
+            psaltery. This article describes the second variety.
+          </p>
+
+          <audio controls>
+            <source src="music/Zither.m4a" type="audio/mpeg" />
+          </audio>
+          <!-- <button class="btn" id="playbtn" onclick="play()">Play &#9658;</button>
+          &nbsp; &nbsp;
+          
+
+          <script>
+            var mySong = document.getElementById("mySong");
+            var playbtn = document.getElementById("playbtn");
+            var count = 0;
+
+            function play(){
+
+              if(count == 0){
+                count = 1;
+                mySong.play();
+                playbtn.innerHTML = "Pause";
+              }else{
+                count = 0;
+                mySong.pause();
+                playbtn.innerHTML = "Play &#9658;";
+              }
+
+            }
+          </script>  -->
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
